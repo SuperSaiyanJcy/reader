@@ -1,0 +1,27 @@
+name: 问题反馈
+description: 报告阅读、排版、字体或启动问题
+body:
+  - type: markdown
+    attributes:
+      value: 请勿上传私人小说、阅读记录、商业字体、令牌或私钥。可使用少量原创文本复现。
+  - type: input
+    id: version
+    attributes:
+      label: Reader 版本
+      placeholder: 例如 1.1.1
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: 系统版本与 CPU
+      placeholder: 例如 macOS 15 / M1，或 Windows 11 / x64
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤、预期结果与实际结果
+      description: 排版问题请同时说明字体、字号、行距、缩放；可附去除个人信息后的截图。
+    validations:
+      required: true

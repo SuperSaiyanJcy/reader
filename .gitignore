@@ -1,0 +1,34 @@
+# Dependencies and generated application bundles
+node_modules/
+dist/
+release/
+*.app
+*.dmg
+*.blockmap
+resources/icon.iconset/
+
+# Test reports and local scratch data
+test-results/
+playwright-report/
+coverage/
+work/
+tmp/
+
+# Local configuration, credentials and reader data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+reader-state.json
+fonts/
+books/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
