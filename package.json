@@ -1,6 +1,6 @@
 {
   "name": "reader-desktop",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "private": true,
   "type": "module",
   "description": "Word 风格的本地 TXT 阅读器",

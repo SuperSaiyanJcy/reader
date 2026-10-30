@@ -4,7 +4,7 @@
   <p><strong>Word 风格的本地 TXT 阅读器</strong></p>
   <p>熟悉的文档界面 · 连续排版 · 两行重叠翻读 · 自定义目录与字体</p>
   <p>
-    <a href="https://github.com/SuperSaiyanJcy/reader/releases"><img alt="版本" src="https://img.shields.io/badge/version-1.1.1-2b579a" /></a>
+    <a href="https://github.com/SuperSaiyanJcy/reader/releases"><img alt="版本" src="https://img.shields.io/badge/version-1.1.2-2b579a" /></a>
     <a href="https://github.com/SuperSaiyanJcy/reader/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/SuperSaiyanJcy/reader/actions/workflows/ci.yml/badge.svg" /></a>
     <img alt="平台" src="https://img.shields.io/badge/platform-macOS%20ARM64%20%7C%20Windows%20x64-555" />
     <a href="LICENSE"><img alt="许可证" src="https://img.shields.io/badge/license-MIT-green" /></a>

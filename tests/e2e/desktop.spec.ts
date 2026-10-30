@@ -206,7 +206,9 @@ test('连续正文不补齐页尾，章节和卷标题在分块边界也紧接�
   const result=await measure();
   expect(Math.max(...result.bottomGaps)).toBeLessThan(30);
   expect(Math.max(...result.headingGaps)).toBeLessThan(30);
-  await page.locator('.document-scroll').evaluate(element=>{element.scrollTop=element.scrollHeight;});
+  // 经由实际导航定位最后分块，避免直接改 scrollTop 与异步虚拟列表定位相互覆盖。
+  await page.getByRole('button',{name:'页面',exact:true}).click();
+  await page.locator('.page-thumbnails button').last().click();
   await expect(page.locator('.paper-last')).toBeVisible();
   const tail=await page.locator('.paper-last').evaluate(paper=>{
     const blocks=paper.querySelectorAll<HTMLElement>('[data-offset]');
